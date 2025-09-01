@@ -2,12 +2,14 @@
 **User registration form created with pure HTML5, focusing on semantics and accessibility.**
 
 <br>
+
 This repository contains a user registration form built with pure HTML5, focusing on semantic structure and accessibility best practices.
+
+<br>
+
 **📋 Project Description**
 
 This project implements a User Registration Form using HTML. It follows semantic HTML structure and accessibility standards using proper labels, grouping with fieldsets/legends, and appropriate input types.
-
-
 
 <br>
 
@@ -41,7 +43,7 @@ Semantic elements: &lt;form&gt;, &lt;fieldset&gt;, &lt;legend&gt;, &lt;label&gt;
 
 **Accessibility:**
 
-Every input is associated with a &lt;label%gt; via matching for / id.
+Every input is associated with a &lt;label&gt; via matching for / id.
 
 Related controls grouped with &lt;fieldset&gt; + &lt;legend&gt;.
 
