@@ -1,9 +1,15 @@
 # User-Registration-Form
-User registration form created with pure HTML5, focusing on semantics and accessibility.
+**User registration form created with pure HTML5, focusing on semantics and accessibility.**
+
+<br>
 This repository contains a user registration form built with pure HTML5, focusing on semantic structure and accessibility best practices.
 **📋 Project Description**
 
-This project implements a User Registration Form using HTML . It follows semantic HTML structure and accessibility standards using proper labels, grouping with fieldsets/legends, appropriate input types.
+This project implements a User Registration Form using HTML. It follows semantic HTML structure and accessibility standards using proper labels, grouping with fieldsets/legends, and appropriate input types.
+
+
+
+<br>
 
 **🎯 Purpose of the Form**
 
@@ -19,46 +25,57 @@ Account Security
 
 Feedback & Additional Info
 
-**Repository Structure**
-.
-├── index.html    # Complete semantic HTML form
+<br>
+
+**Repository Structure**<br>
+├── index.html    # Complete semantic HTML form<br>
 └── README.md     # Project documentation (this file)
+
+<br>
 
 **🛠️ Implementation Notes**
 
-Semantic elements: <form>, <fieldset>, <legend>, <label>, <input>, <select>, <textarea>, <button>
+Semantic elements: &lt;form&gt;, &lt;fieldset&gt;, &lt;legend&gt;, &lt;label&gt;, &lt;input&gt;, &lt;select&lt;, &lt;textarea&gt;, &lt;button&gt;.
+
+<br>
 
 **Accessibility:**
 
-Every input is associated with a <label> via matching for / id
+Every input is associated with a &lt;label%gt; via matching for / id.
 
-Related controls grouped with <fieldset> + <legend>
+Related controls grouped with &lt;fieldset&gt; + &lt;legend&gt;.
 
-Proper type attributes (e.g., email, tel, date, url, password, file, color, range, time, month, week)
+Proper type attributes (e.g., email, tel, date, url, password, file, color, range, time, month, week).
 
-Required agreements (Terms, Privacy) use required
+Required agreements (Terms, Privacy) use required.
+
+<br>
 
 **HTML5 best practices:**
 
-Uses <!DOCTYPE html> and lang attribute
+Uses &lt;!DOCTYPE html&gt; and lang attribute.
 
-Logical heading hierarchy
+Logical heading hierarchy.
 
-Inputs include helpful placeholder where appropriate
+Inputs include helpful placeholders where appropriate.
 
-orm Sections & Fields (Overview)
+<br>
 
-Personal Information: first name, last name, date of birth, age, gender (radio), profile photo (file)
+**Form Sections & Fields (Overview)**
 
-Contact & Address: email, phone, website URL, street address, country (select), ZIP/Postal, preferred contact time
+Personal Information: first name, last name, date of birth, age, gender (radio), profile photo (file).
 
-Preferences & Interests: favorite color, experience (range), birth month, available week, keywords, interests (checkboxes), education level (select)
+Contact & Address: email, phone, website URL, street address, country (select), ZIP/Postal, preferred contact time.
 
-Account Security: password, confirm password
+Preferences & Interests: favorite color, experience (range), birth month, available week, keywords, interests (checkboxes), education level (select).
 
-Feedback & Additional Info: about yourself, suggestions, registration date & time, “how did you hear about us?” (select), resume upload, newsletter (checkbox), terms & privacy (required checkboxes)
+Account Security: password, confirm password.
+
+Feedback & Additional Info: about yourself, suggestions, registration date & time, “how did you hear about us?” (select), resume upload, newsletter (checkbox), terms & privacy (required checkboxes).
 
 Submit button
+
+<br>
 
 **▶️ How to View/Use**
 
@@ -68,17 +85,21 @@ Open index.html in any modern web browser.
 
 Fill the form fields and submit (no backend processing included).
 
+<br>
+
 **🔍 Notes for Reviewers (Assessment Focus)**
 
-Correct semantic grouping with <fieldset>/<legend>
+Correct semantic grouping with &lt;fieldset&gt;/&lt;legend&gt;
 
-Accurate input types and accessible labels
+Accurate input types and accessible labels.
 
-Clean, readable HTML5 structure
+Clean, readable HTML5 structure.
 
-No CSS/JS included (per brief)
+No CSS/JS included.
 
-Clear documentation in this README
+Clear documentation in this README.
+
+<br>
 
 **📚 References (README writing)**
 
