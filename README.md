@@ -1,9 +1,9 @@
 # User-Registration-Form
-User registration form created with pure HTML5, focusing on semantics and accessibility.
-This repository contains a user registration form built with pure HTML5, focusing on semantic structure and accessibility best practices.
+User registration form created with HTML5 and CSS3, focusing on semantics and accessibility.
+This repository contains a user registration form built with HTML5 and CSS3, focusing on semantic structure and accessibility best practices.
 ** Project Description**
 
-This project implements a User Registration Form using HTML . It follows semantic HTML structure and accessibility standards using proper labels, grouping with fieldsets/legends, appropriate input types.
+This project implements a User Registration Form using HTML . It follows semantic HTML structure and accessibility standards using proper labels, grouping with fieldsets/legends, appropriate input types and Professional CSS practices for clean, responsive layout and interactive states
 
 ** Purpose of the Form**
 
@@ -22,45 +22,110 @@ Feedback & Additional Info
 **Repository Structure**
 .
 ├── index.html    # Complete semantic HTML form
+├── styles.css    # CSS styling for the form
 └── README.md     # Project documentation (this file)
 
 ** Implementation Notes**
 
-Semantic elements: <form>, <fieldset>, <legend>, <label>, <input>, <select>, <textarea>, <button>
+**HTML**
+Uses <form>, <fieldset>, <legend>, <label>, <input>, <select>, <textarea>, <button>
+
+Each input associated with <label> via for/id
+
+Sections grouped with <fieldset> + <legend>
+
+Input types optimized (email, tel, url, password, color, date/time, etc.)
+
+Required agreements (Terms/Privacy) use required attribute
+
+**CSS**
+CSS Variables (:root) used for consistent color management
+
+Box Model applied with margin, padding, border, and radius for clarity
+
+Interactive States:
+
+Hover, Focus, Active states for inputs and buttons
+
+Smooth transitions for accessibility feedback
+
+Accessibility:
+
+High contrast between text/background
+
+Red asterisk * for required fields
+
+Visible focus outlines for keyboard navigation
+
 
 **Accessibility:**
 
-Every input is associated with a <label> via matching for / id
 
-Related controls grouped with <fieldset> + <legend>
+Labels clearly connected to inputs
 
-Proper type attributes (e.g., email, tel, date, url, password, file, color, range, time, month, week)
+Fieldsets provide grouping for screen readers
 
-Required agreements (Terms, Privacy) use required
+Required fields indicated with a red *
 
-**HTML5 best practices:**
+Inputs have clear focus styles for keyboard navigation
 
-Uses <!DOCTYPE html> and lang attribute
+Styling Approach (CSS)
 
-Logical heading hierarchy
+CSS Variables (:root) used for color palette
 
-Inputs include helpful placeholder where appropriate
+Box Model applied consistently (margin, padding, border, radius)
 
-orm Sections & Fields (Overview)
+Flexbox used to align buttons (Reset left, Register right)
 
-Personal Information: first name, last name, date of birth, age, gender (radio), profile photo (file)
+Interactive states added: hover, focus, active transitions
 
-Contact & Address: email, phone, website URL, street address, country (select), ZIP/Postal, preferred contact time
+Custom styles for select dropdown, color picker, and other input types
 
-Preferences & Interests: favorite color, experience (range), birth month, available week, keywords, interests (checkboxes), education level (select)
+**Color Palette**
+Purpose	            Color Code
+Primary Blue	    #2563eb
+Primary Dark	    #1e40af
+Primary Light	    #3b82f6
+Background Light	#f9fafb
+White	            #ffffff
+Text Dark	        #1f2937
+Text Light	        #6b7280
+Border	            #d1d5db
+Border Focus	    #2563eb
+Success	        #10b981
+Error	            #ef4444
+Warning	        #f59e0b
+Accent Purple	    #8b5cf6
+Accent Pink	    #ec4899
 
-Account Security: password, confirm password
 
-Feedback & Additional Info: about yourself, suggestions, registration date & time, “how did you hear about us?” (select), resume upload, newsletter (checkbox), terms & privacy (required checkboxes)
+**Features Implemented**
 
-Submit button
+-Semantic and accessible HTML5 form
 
-** How to View/Use**
+-Styled container with padding, rounded corners, and shadow
+
+-Full-width inputs with consistent spacing
+
+-Custom dropdown arrow and styled color picker
+
+-Required fields marked with red *
+
+-Prominent submit button with hover/active states
+
+-Reset button styled as link for minimal visual weight
+
+**Browser Compatibility**
+
+ Chrome (tested)
+
+ Edge (tested)
+
+ Safari (tested)
+
+ Firefox: :has() selector for required asterisk not fully supported yet
+
+**How to View/Use**
 
 Download or clone this repository.
 
@@ -68,17 +133,17 @@ Open index.html in any modern web browser.
 
 Fill the form fields and submit (no backend processing included).
 
-** Notes for Reviewers (Assessment Focus)**
+**Notes for Reviewers**
 
-Correct semantic grouping with <fieldset>/<legend>
+Correct semantic used
 
 Accurate input types and accessible labels
 
 Clean, readable HTML5 structure
 
-No CSS/JS included (per brief)
+External CSS with variables, flexbox, and transitions
 
-Clear documentation in this README
+README updated
 
 ** References (README writing)**
 
