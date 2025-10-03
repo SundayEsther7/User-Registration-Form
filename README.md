@@ -137,9 +137,9 @@ Fill the form fields and submit (no backend processing included).
 
 Correct semantic used
 
-Accurate input types and accessible labels
+Clean, readable HTML5 structure.
 
-Clean, readable HTML5 structure
+No CSS/JS included.
 
 External CSS with variables, flexbox, and transitions
 
