@@ -84,21 +84,21 @@ Interactive states added: hover, focus, active transitions
 Custom styles for select dropdown, color picker, and other input types
 
 ## Color Palette ##
-Purpose	            Color Code
-Primary Blue	    #2563eb
-Primary Dark	    #1e40af
-Primary Light	    #3b82f6
-Background Light	#f9fafb
-White	            #ffffff
-Text Dark	        #1f2937
-Text Light	        #6b7280
-Border	            #d1d5db
-Border Focus	    #2563eb
-Success	        #10b981
-Error	            #ef4444
-Warning	        #f59e0b
-Accent Purple	    #8b5cf6
-Accent Pink	    #ec4899
+Purpose	            Color Code<br>
+Primary Blue	    #2563eb<br>
+Primary Dark	    #1e40af<br>
+Primary Light	    #3b82f6<br>
+Background Light	#f9fafb<br>
+White	            #ffffff<br>
+Text Dark	        #1f2937<br>
+Text Light	        #6b7280<br>
+Border	            #d1d5db<br>
+Border Focus	    #2563eb<br>
+Success	        #10b981<br>
+Error	            #ef4444<br>
+Warning	        #f59e0b<br>
+Accent Purple	    #8b5cf6<br>
+Accent Pink	    #ec4899<br>
 
 
 ## Features Implemented ##
