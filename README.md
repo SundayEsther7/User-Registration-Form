@@ -1,11 +1,11 @@
 # User-Registration-Form
 User registration form created with pure HTML5, focusing on semantics and accessibility.
 This repository contains a user registration form built with pure HTML5, focusing on semantic structure and accessibility best practices.
-**📋 Project Description**
+** Project Description**
 
 This project implements a User Registration Form using HTML . It follows semantic HTML structure and accessibility standards using proper labels, grouping with fieldsets/legends, appropriate input types.
 
-**🎯 Purpose of the Form**
+** Purpose of the Form**
 
 Collect structured user data across clear sections:
 
@@ -24,7 +24,7 @@ Feedback & Additional Info
 ├── index.html    # Complete semantic HTML form
 └── README.md     # Project documentation (this file)
 
-**🛠️ Implementation Notes**
+** Implementation Notes**
 
 Semantic elements: <form>, <fieldset>, <legend>, <label>, <input>, <select>, <textarea>, <button>
 
@@ -60,7 +60,7 @@ Feedback & Additional Info: about yourself, suggestions, registration date & tim
 
 Submit button
 
-**▶️ How to View/Use**
+** How to View/Use**
 
 Download or clone this repository.
 
@@ -68,7 +68,7 @@ Open index.html in any modern web browser.
 
 Fill the form fields and submit (no backend processing included).
 
-**🔍 Notes for Reviewers (Assessment Focus)**
+** Notes for Reviewers (Assessment Focus)**
 
 Correct semantic grouping with <fieldset>/<legend>
 
@@ -80,7 +80,7 @@ No CSS/JS included (per brief)
 
 Clear documentation in this README
 
-**📚 References (README writing)**
+** References (README writing)**
 
 GitHub: About READMEs – https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
 

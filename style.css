@@ -1,0 +1,262 @@
+/* Reset default browser style*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables (Color Palette) */
+:root {
+  /* Primary Colors */
+  --primary-blue: #2563eb;
+  --primary-dark: #1e40af;
+  --primary-light: #3b82f6;
+
+  /* Neutral Colors */
+  --bg-light: #f9fafb;
+  --white: #ffffff;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --border: #d1d5db;
+  --border-focus: #2563eb;
+
+  /* Status Colors */
+  --success: #10b981;
+  --error: #ef4444;
+  --warning: #f59e0b;
+
+  /* Accent Colors */
+  --accent-purple: #8b5cf6;
+  --accent-pink: #ec4899;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-light);
+  margin: 0;
+  line-height: 1.25;
+  /* padding: 2rem; */
+}
+/* Top title h1*/
+.top {
+  text-align: center;
+  color: var(--primary-dark);
+  margin: 1.5rem 0;
+  font-size: 2rem; 
+  font-weight: 700; 
+}
+
+/* Form container */
+.form-container {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically if needed */
+  min-height: 80vh;        /* take up screen height */
+}
+
+
+form {
+  background-color: var(--white);
+  max-width: 600px;
+  width: 90%;
+  padding: 2rem; /* inner spacing */
+  margin: 1rem;  /* space around form */
+  border-radius: 8px; /* rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* soft shadow */
+  text-align: left;
+  position: relative;
+}
+
+/* Remove default fieldset styles */
+fieldset {
+  border: none; 
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Fieldset legends */
+legend {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  
+}
+
+/* Labels */
+label {
+  display: block; /* one per line */
+  font-size: 1rem;
+  /* font-weight: 500; */
+  margin-bottom: 0.3rem;
+  color: var(--text-dark);
+}
+
+/* Input text */
+input,
+select,
+textarea {
+  padding: 0.75rem;
+  /* margin-bottom: 1.25rem; */
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  /* font-size: 1rem; */
+  background-color: var(--white);
+  color: var(--text-dark);
+  transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 1rem; /* consistent font size */
+}
+.control {
+  width: 100%; /* full width */
+  margin-bottom: 0.25rem; /* space below */
+}
+.picker{
+    width: 40%; /* full width */
+    margin-bottom: 0.25rem; /* space below */
+}
+
+/* Placeholder text */
+::placeholder {
+  color: var(--text-light);
+  font-style: italic;
+}
+
+/* Input focus */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--border-focus); /* blue border */
+  outline: none; /* remove default outline */
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2); /* soft blue glow */
+}
+
+/* Reset color input so it looks correct */
+input[type="color"] {
+  -webkit-appearance: none; /* reset Safari/Chrome */
+  -moz-appearance: none;    /* reset Firefox */
+  appearance: none;
+  height: 3rem;
+  padding: 0;     /* remove text field padding */
+  cursor: pointer;
+  background: none;
+}
+
+/* Optional: add border if you want consistency */
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 0.25rem;
+  border: 1px solid var(--border);
+}
+
+input[type="color"]::-moz-color-swatch {
+  border-radius: 0.25rem;
+  border: 1px solid var(--border);
+}
+
+
+/* Select dropdown */
+select {
+  appearance: none;             /* removes default browser arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+
+/* Add custom arrow using background */
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%231f2937' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1.2rem;
+}
+
+/* Textarea */
+textarea {
+  resize: vertical; /* allow vertical resize only */
+  min-height: 120px;
+}
+
+/* Add red star after label if its input is required */
+label:has(+ input[required])::after {
+  content: " *";
+  color: var(--error);
+  font-weight: bold;
+}
+
+/* Base button styles */
+ button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  
+}
+
+/* Container for form actions (buttons) */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 2rem;
+
+}
+/* Submit button */
+.submit {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  padding: 0.75rem 3rem;
+}
+
+.submit:hover {
+  background-color: var(--primary-dark);
+}
+
+.submit:active {
+  background-color: var(--primary-light);
+  transform: scale(0.97);
+}
+
+/* Reset button */
+.reset {
+  background: none;              
+  border: none;                  
+  color: var(--accent-pink);
+  text-decoration: underline;    
+  font-size: 0.9rem;             
+  cursor: pointer;
+}
+
+.reset:hover {
+color: var(--accent-purple);
+}
+
+.reset:active {
+  background-color: var(--text-light);
+  color: var(--white);
+  transform: scale(0.97);
+}
+
+/* Spacing and layout for fieldsets */
+fieldset {
+  border: none;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  box-shadow: 0 2px 0 0 var(--border);
+}
+/*  Remove bottom margin and padding for last fieldset */
+fieldset:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  box-shadow: none;
+}

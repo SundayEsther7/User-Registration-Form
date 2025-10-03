@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>User Registration Form</title>
 </head>
 <body>
     
-  <h1>User Registration Form</h1>
+  <h1 class="top">User Registration Form</h1>
   
+  <div class="form-container">
+
   <form action="#" method="post">
 
     <!-- Personal Information -->
@@ -17,34 +20,34 @@
 
       <div>
       <label for="fname">First Name:</label>
-      <input type="text" id="fname" name="fname" required>
+      <input type="text" class="control" id="fname" name="fname"  required>
       </div>
 
       <br>
 
       <div>
       <label for="sname">Second Name:</label>
-      <input type="text" id="sname" name="sname" required>
+      <input type="text" class="control" id="sname" name="sname" required>
       </div>
 
       <br>
 
       <div>
       <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob" required placeholder="mm/dd/yyyy">
+      <input type="date" class="control" id="dob" name="dob" required placeholder="mm/dd/yyyy">
       </div>
 
       <br> 
 
       <div>
       <label for="age">Age</label>
-      <input type="number" id="age" name="age" required min="0" max="120">
+      <input type="number" class="control" id="age" name="age" required min="0" max="120">
       </div>
 
       <br> 
 
       <div>
-      <label for="gender">Gender:</label><br>
+      <label for="gender" class="check" >Gender:</label><br>
       <label><input type="radio" name="gender" value="male" required> Male</label><br>
       <label><input type="radio" name="gender" value="female"> Female</label><br>
       <label><input type="radio" name="gender" value="other"> Other</label>
@@ -54,7 +57,7 @@
 
       <div>
         <label for="file">Upload Profile Picture:</label>
-        <input type="file" id="file" name="file" accept="image/*" required>
+        <input type="file" class="control" id="file" name="file" accept="image/*" required>
         <br><br>
       </div>
     </fieldset>
@@ -65,43 +68,43 @@
 
       <div>
       <label for="Email">Email Address:</label>
-      <input type="Email" id="Email" name="Email" required>
+      <input type="Email" class="control" id="Email" name="Email" required>
       </div>
 
       <br>
 
       <div>
         <label for="phone">Phone number:</label>
-        <input type="tel" id="phone" name="phone" required>
+        <input type="tel" class="control" id="phone" name="phone" required>
       </div>
 
       <br> 
 
       <div>
         <label for="website">Personal website</label>
-        <input type="url" id="website" name="website" placeholder="https://example.com"  required>
+        <input type="url" class="control" id="website" name="website" placeholder="https://example.com"  required>
       </div>
 
       <br> 
 
       <div>
         <label for="address">Street Address:</label>
-        <input type="text" id="address" name="address" required>
+        <input type="text" class="control" id="address" name="address" required>
       </div>
 
       <br>
 
       <div>
         <label for="city">City:</label>
-        <input type="text" id="city" name="city" required>
+        <input type="text" class="control" id="city" name="city" required>
       </div>
 
       <br>
 
       <div>
         <label for="Country">Country:</label>
-        <select id="Country" name="Country" required>
-          <option value="">Select Country</option>
+        <select id="Country" class="control" name="Country" required>
+          <option value="Select Country">Select Country</option>
           <option value="USA">USA</option>
           <option value="Canada">Canada</option>
           <option value="UK">UK</option>
@@ -115,14 +118,14 @@
 
       <div>
         <label for="zip">Zip Code:</label>
-        <input type="text" id="zip" name="zip" required pattern="[0-9]{5}">
+        <input type="text" class="control" id="zip" name="zip" required pattern="[A-Za-z0-9\s\-]{3,10}">
       </div>
 
       <br>
 
       <div>
         <label for="Contact">Preferred Contact Time</label>
-        <input type="time" id="Contact" name="Contact" required>
+        <input type="time" class="control" id="Contact" name="Contact" required>
       </div>
 
       <br>
@@ -135,41 +138,41 @@
 
       <div>
         <label for="color">Favorite Color</label>
-        <input type="color" id="color" name="color" value="#FF0000" required>
+        <input type="color" class="picker" id="color" name="color" value="#FF0000" required>
       </div>
 
       <br>
 
       <div>
         <label for="level">Experience Level(1-10)</label>
-        <input type="range" id="level" name="level" min="1" max="10" required>
+        <input type="range" class="control, picker" id="level" name="level" min="1" max="10" required>
       </div>
 
       <br>
 
       <div>
         <label for="month">Birth Month</label>
-        <input type="month" id="month" name="month" required>
+        <input type="month" class="control" id="month" name="month" required>
       </div>
 
       <br>
 
       <div>
         <label for="week">Available Week</label>
-        <input type="week" id="week" name="week" required>
+        <input type="week" class="control" id="week" name="week" required>
       </div>
 
       <br>
 
       <div>
         <label for="keywords">Search Keywords</label>
-        <input type="search" id="keywords" name="keywords" required placeholder="Enter keywords...">
+        <input type="search" class="control" id="keywords" name="keywords" required placeholder="Enter keywords...">
       </div>
 
       <br>
 
        <div>
-        <label for="interests">Interests(Select all that apply)</label> <br>
+        <label for="interests" class="check" >Interests(Select all that apply)</label> <br>
         <input type="checkbox" id="interests" name="interests"  value="technology">Technology <br>
         <input type="checkbox" id="interests1" name="interests" value="sports">Sports <br>
         <input type="checkbox" id="interests2" name="interests" value="music">Music <br>
@@ -182,7 +185,7 @@
 
        <div>
         <label for="education">Education Level:</label>
-        <select id="education" name="education" required>
+        <select class="control" id="education" name="education" required>
           <option value="">Select Education Level</option>
           <option value="primary">Primary Education</option>
           <option value="secondary">Secondary Education</option>
@@ -198,14 +201,14 @@
 
       <div>
        <label for="password">Create Password:</label>
-        <input type="password" id="password" name="password" min="4" max="12" required>
+        <input type="password" class="control" id="password" name="password" min="4" max="12" required>
       </div>
 
       <br>
 
       <div>
         <label for="confirm_password">Confirm Password:</label>
-        <input type="password" id="confirm_password" name="confirm_password" required>
+        <input type="password" class="control" id="confirm_password" name="confirm_password" required>
       </div>
 
       <br>
@@ -216,28 +219,28 @@
         <legend>Feedback & Additional Information</legend>
         <div>
           <label for="comment">Tell us about yourself</label><br>
-          <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Write a brief description about yourself..." required></textarea>
+          <textarea class="control" id="comment" name="comment" rows="4" cols="50" placeholder="Write a brief description about yourself..." required></textarea>
         </div>
 
         <br>
 
         <div>
           <label for="feedback">Suggestions for improvement</label><br>
-          <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Any Suggestionsor feedback..." required></textarea>
+          <textarea class="control" id="feedback" name="feedback" rows="4" cols="50" placeholder="Any Suggestions or feedback..." required></textarea>
         </div>
 
         <br>
 
         <div>
           <label for="dt">Registration Date & time</label>
-          <input type="datetime-local" id="dt" name="dt" required>
+          <input type="datetime-local" class="control" id="dt" name="dt" required>
         </div>
         
         <br>
 
         <div>
         <label for="Source">How did you hear about us:</label>
-        <select id="Source" name="Source" required>
+        <select id="Source" class="control"  name="Source" required>
           <option value="Source">Select Source</option>
           <option value="Facebook">Facebook</option>
           <option value="Tiktok">Tiktok</option>
@@ -252,14 +255,14 @@
 
       <div>
         <label for="resume">Upload Resume</label>
-        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        <input type="file" class="control" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
       </div>
 
       <br>
 
       <div>
         <input type="checkbox" id="subscribe" name="subscribe">
-        <label for="subscribe">Subscribe to Newsletter</label>
+        <label for="subscribe" >Subscribe to Newsletter</label>
       </div>
 
       <br>
@@ -279,12 +282,14 @@
 
     <!-- Form Actions -->
     <br>
-    <label for="submit"> <input type="submit" value="Register">
-    <label for="reset"> <input type="reset" value="Reset Form">
-    </label>
+    <div class="form-actions">
+  <button type="submit" class="submit">Register</button>
+  <button type="reset" class="reset">Reset Form</button>
+</div>
 
   </form>
 
+  </div>
 
 </body>
 </html>
