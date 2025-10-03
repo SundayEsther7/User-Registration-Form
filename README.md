@@ -30,11 +30,11 @@ Feedback & Additional Info
 ## Implementation Notes ##
 
 **HTML**<br>
-Uses <form>, <fieldset>, <legend>, <label>, <input>, <select>, <textarea>, <button><br>
+Uses `<form>`, `<fieldset>`, `<legend>`, `<label>`, `<input>,` `<select>`, `<textarea>`, `<button>`<br>
 
-Each input associated with <label> via for/id<br>
+Each input associated with `<label>` via for/id<br>
 
-Sections grouped with <fieldset> + <legend><br>
+Sections grouped with `<fieldset>` + `<legend>`<br>
 
 Input types optimized (email, tel, url, password, color, date/time, etc.)
 
